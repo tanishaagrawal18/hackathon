@@ -74,3 +74,25 @@ We welcome contributors and industry partners to refine and expand SkillBridge! 
 ## 🎖️ Hackathon Impact & Potential
 SkillBridge is designed to revolutionize education by providing an industry-aligned, scalable, and sustainable learning ecosystem. By leveraging AI, automation, and real-world problem-solving, we empower students to gain job-ready skills and bridge the skill gap between academia and industry. 🚀
 
+
+## Screenshots
+
+### Screenshot 1
+![Screenshot 1](https://drive.google.com/uc?export=view&id=1tawFGSnbbPyBCKC5sfVVoMfxhQAV72rP)
+
+### Screenshot 2
+![Screenshot 2](https://drive.google.com/uc?export=view&id=1ODbVyCcbr4-dqbMYakYQz5iJWq5wAz7h)
+
+### Screenshot 3
+![Screenshot 3](https://drive.google.com/uc?export=view&id=1C32N-jU_EqtUuh1r9WrrIzyqozhdScW5)
+
+### Screenshot 4
+![Screenshot 4](https://drive.google.com/uc?export=view&id=1cl9AXX8d_Xxgvrxcrc_exbCkB8NMrins)
+
+### Screenshot 5
+![Screenshot 5](https://drive.google.com/uc?export=view&id=1n3sdAt4RELzsS25_TrgQRWED5olawG7K)
+
+### Screenshot 6
+![Screenshot 6](https://drive.google.com/uc?export=view&id=1nWEWe_MjqCqcdznU2HfUu6ee6EcysS6J)
+
+
