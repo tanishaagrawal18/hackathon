@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Plan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Your Learning Plan</h1>
+        <nav>
+            <a href="page2.html">Back</a>
+            <a href="page4.html">Next: Profile</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Recommended Courses</h2>
+        <div class="card">
+            <h3>Course: AI for Everyone (Coursera)</h3>
+            <p><strong>Timeline:</strong> 4 weeks</p>
+            <p><strong>Prerequisites:</strong> None</p>
+            <p><strong>Pros:</strong> Beginner-friendly, certificate included</p>
+            <p><strong>Cons:</strong> Basic content</p>
+            <button onclick="enroll('AI for Everyone')">Enroll</button>
+        </div>
+        <p id="enroll-message"></p>
+    </div>
+    <script>
+        function enroll(course) {
+            document.getElementById("enroll-message").textContent = `Enrolled in ${course}!`;
+        }
+    </script>
+</body>
+</html>

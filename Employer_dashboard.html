@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Employer Dashboard</h1>
+        <nav>
+            <a href="page5.html">Back</a>
+            <a href="page7.html">Next: Leaderboard</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Search Developers</h2>
+            <input type="text" id="search" placeholder="Enter skill or name">
+            <button onclick="searchDevs()">Search</button>
+            <p id="search-result"></p>
+        </div>
+        <div class="card">
+            <h2>Post Job Opening</h2>
+            <input type="text" id="job-title" placeholder="Job Title">
+            <button onclick="postJob()">Post</button>
+            <p id="job-result"></p>
+        </div>
+        <div class="card">
+            <h2>Add Assignment</h2>
+            <textarea id="assignment" placeholder="Assignment details"></textarea>
+            <button onclick="addAssignment()">Add</button>
+            <p id="assignment-result"></p>
+        </div>
+    </div>
+    <script>
+        function searchDevs() {
+            const query = document.getElementById("search").value;
+            document.getElementById("search-result").textContent = `Found developers with skill: ${query}`;
+        }
+
+        function postJob() {
+            const title = document.getElementById("job-title").value;
+            document.getElementById("job-result").textContent = `Job posted: ${title}`;
+        }
+
+        function addAssignment() {
+            const assignment = document.getElementById("assignment").value;
+            document.getElementById("assignment-result").textContent = "Assignment added successfully!";
+        }
+    </script>
+</body>
+</html>

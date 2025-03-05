@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment Submission</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Submit Assignment</h1>
+        <nav>
+            <a href="page4.html">Back</a>
+            <a href="page6.html">Next: Employer Dashboard</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Upload Your Code</h2>
+            <textarea id="code" rows="10" cols="50" placeholder="Paste your code here"></textarea>
+            <button onclick="submitCode()">Submit</button>
+            <p id="feedback"></p>
+        </div>
+        <div class="card">
+            <h2>Chatbot Support</h2>
+            <input type="text" id="chat-input" placeholder="Ask a question">
+            <button onclick="chat()">Send</button>
+            <p id="chat-response"></p>
+        </div>
+    </div>
+    <script>
+        function submitCode() {
+            const code = document.getElementById("code").value;
+            const feedback = document.getElementById("feedback");
+            if (code) {
+                feedback.textContent = "Feedback: Code is readable but optimize loops for efficiency.";
+            } else {
+                feedback.textContent = "Please submit some code!";
+            }
+        }
+
+        function chat() {
+            const input = document.getElementById("chat-input").value;
+            const response = document.getElementById("chat-response");
+            if (input) {
+                response.textContent = "Chatbot: Try breaking down your problem into smaller steps.";
+            }
+        }
+    </script>
+</body>
+</html>

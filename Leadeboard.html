@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Leaderboard</h1>
+        <nav>
+            <a href="page6.html">Back</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Top Performers</h2>
+            <ol>
+                <li>Jane Doe - 95 points (Grandmaster)</li>
+                <li>John Smith - 90 points (Master)</li>
+                <li>Alex Lee - 85 points (Knight)</li>
+            </ol>
+            <button onclick="refresh()">Refresh</button>
+            <p id="refresh-message"></p>
+        </div>
+    </div>
+    <script>
+        function refresh() {
+            document.getElementById("refresh-message").textContent = "Leaderboard updated!";
+        }
+    </script>
+</body>
+</html>

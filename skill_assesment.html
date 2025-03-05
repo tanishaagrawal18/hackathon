@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Assessment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Skill Assessment</h1>
+        <nav>
+            <a href="page1.html">Back</a>
+            <a href="page3.html">Next: Learning Plan</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Rate Your Skills</h2>
+        <div class="card">
+            <label>Skill Level (1-10):</label>
+            <input type="number" id="skill-level" min="1" max="10">
+            <button onclick="submitRating()">Submit Rating</button>
+            <p id="rating-result"></p>
+        </div>
+        <h2>Take a Quiz</h2>
+        <div class="card">
+            <p>Question: What is the time complexity of a binary search?</p>
+            <input type="text" id="quiz-answer">
+            <button onclick="checkQuiz()">Submit Answer</button>
+            <p id="quiz-result"></p>
+        </div>
+    </div>
+    <script>
+        function submitRating() {
+            const level = document.getElementById("skill-level").value;
+            const result = document.getElementById("rating-result");
+            if (level >= 1 && level <= 10) {
+                result.textContent = `You rated yourself ${level}/10!`;
+            } else {
+                result.textContent = "Please enter a valid rating (1-10).";
+            }
+        }
+
+        function checkQuiz() {
+            const answer = document.getElementById("quiz-answer").value.toLowerCase();
+            const result = document.getElementById("quiz-result");
+            if (answer === "o(log n)") {
+                result.textContent = "Correct! Moving forward.";
+            } else {
+                result.textContent = "Incorrect. Try again!";
+            }
+        }
+    </script>
+</body>
+</html>

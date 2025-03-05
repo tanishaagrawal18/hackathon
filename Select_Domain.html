@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Domain</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>SkillBridge Platform</h1>
+        <nav>
+            <a href="page2.html">Next: Skill Assessment</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Select Your Career Domain</h2>
+        <div class="card">
+            <select id="domain" onchange="selectDomain()">
+                <option value="">Choose a domain</option>
+                <option value="ai">Artificial Intelligence</option>
+                <option value="fullstack">Full-Stack Development</option>
+                <option value="cybersecurity">Cybersecurity</option>
+            </select>
+            <p id="domain-message"></p>
+        </div>
+    </div>
+    <script>
+        function selectDomain() {
+            const domain = document.getElementById("domain").value;
+            const message = document.getElementById("domain-message");
+            if (domain) {
+                message.textContent = `You selected ${domain.toUpperCase()}! Proceed to skill assessment.`;
+            } else {
+                message.textContent = "";
+            }
+        }
+    </script>
+</body>
+</html>

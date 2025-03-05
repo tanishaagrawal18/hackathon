@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>User Profile</h1>
+        <nav>
+            <a href="page3.html">Back</a>
+            <a href="page5.html">Next: Assignments</a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="card">
+            <h2>Student Details</h2>
+            <p>Name: John Doe</p>
+            <p>Domain: AI</p>
+            <p>Ranking: #5</p>
+            <p>Total Marks: 85/100</p>
+        </div>
+        <div class="card">
+            <h2>Personal Roadmap</h2>
+            <p>Step 1: Complete AI Basics</p>
+            <p>Step 2: Build a Neural Network</p>
+        </div>
+        <div class="card">
+            <h2>Assignment Progress</h2>
+            <p>Assignment 1: 90/100 (Completed)</p>
+            <p>Assignment 2: In Progress</p>
+        </div>
+        <button onclick="applyJob()">Apply for Jobs</button>
+        <p id="job-message"></p>
+    </div>
+    <script>
+        function applyJob() {
+            document.getElementById("job-message").textContent = "Job application submitted!";
+        }
+    </script>
+</body>
+</html>
